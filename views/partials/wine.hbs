@@ -1,0 +1,12 @@
+<div class='results'>
+  <h3>{{pairedWines}}</h3>
+  <span>{{pairingText}}</span>
+    {{#each productMatches}}
+     <div class="wineResult">
+     <div class="result-Title">{{title}}</div>
+<div class="result-Price">The price is {{price}}</div>
+  <img  class="result-img" src='{{imageUrl}}' alt='{{title}}'/>
+</div>
+<p>{{this.description}}</p>
+  {{/each}}
+</div>

@@ -1,0 +1,92 @@
+*{
+  font-family: 'Vollkorn SC', serif;
+  box-sizing: border-box;
+  margin:0;
+}
+
+body{
+  background-image: url("/images/image6.jpg") ;
+  background-repeat: no-repeat; 
+}
+
+section > p{
+  padding-top: 20px;
+}
+
+nav{
+  background-color: #9D2C37;
+  font-size: 2em;
+  margin:auto;
+}
+
+nav >h1 {
+  margin-left: 20px;
+}
+
+h4{
+  margin-top: 20px;
+}
+
+.sectionMainPage{
+  background-color: #A02B34;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  margin:auto;
+  margin-top: 100px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin:auto;
+}
+
+input{
+  height: 30px;
+  margin-bottom: 30px;
+  margin-top: 20px;;
+}
+
+button{
+  width: 70px;
+  margin: auto;
+}
+
+.footer{
+  background-color: #A02B34;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.wine-list{
+  background-color: #A02B34;
+  max-width: 850px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wineResult{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.result-Title{
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.result-Price{
+  margin-top: 10px;
+  font-size: 1em;
+}
