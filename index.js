@@ -1,7 +1,8 @@
 const express = require('express');
 const hbs = require('hbs');
 const axios = require('axios');
-
+require('dotenv').config();
+console.log(process.env)
 const app = express();
 
 app.set('view engine', 'hbs');
@@ -15,12 +16,11 @@ app.get('/', (req, res) =>{
   res.render('home');
 });
 
-const API_KEY = 'd72e96afae1e49f68f80790270407ff3';
-
 app.get('/results', (req, res) => {
+  const api_key= process.env.API_KEY;
   const dish = req.query.food;
   axios
-  .get(`https://api.spoonacular.com/food/wine/pairing?food=${dish}&apiKey=${API_KEY}`)
+  .get(`https://api.spoonacular.com/food/wine/pairing?food=${dish}&apiKey=${api_key}`)
   .then(resp => {
     res.render('results', {
       wines: resp.data
